@@ -6,8 +6,6 @@
 
 
 📢 Stay up-to-date! Subscribe to the [eilmeldung release atom feed](https://github.com/christo-auer/eilmeldung/releases.atom) or `c e` in eilmeldung!
-
-![Logo of eilmeldung](docs/images/logo.png) 
   
 
 ![Screenshot of eilmeldung](docs/images/hero-shot.png) 
