@@ -1,5 +1,7 @@
 # Unreleased
 
+# 1.5.1 - 2026-05-13
+
 - **open borders for everyone**! 
   - you can now freely customize the border style of the panels!
   - want to highlight the focused panel by a double border and use a plain border for inactive panels? just append this to your `config.toml`:
