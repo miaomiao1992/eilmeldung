@@ -14,7 +14,7 @@
         owner = "christo-auer";
         repo = "eilmeldung";
         rev = version;
-        hash = "sha256-41LQo89Kdik9S1KJRyGamrM5YfEw4Ac/vIkfq7XuIxc=";
+        hash = "sha256-4qrG1PfsDzaFr9mesNCP0QUDYgJy0onFuCKRxF+gybA=";
       };
 
       mkEilmeldung = pkgs: src: ver:
