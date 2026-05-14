@@ -1,5 +1,7 @@
 # Unreleased
 
+# 1.5.2 - 2026-05-14
+
 - restored default border theme (connected and rounded)
 - fixed bug which resulted in rapid swapping of article content 
 
