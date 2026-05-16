@@ -57,11 +57,12 @@ according to eilmeldung.org...
 
 # Showreel
 
-https://github.com/user-attachments/assets/ddd731dd-3fce-43c2-80fd-dafb20520873
+<img width="891" height="560" alt="eilmeldung-scaled" src="https://github.com/user-attachments/assets/1ada3b6b-aa7f-4a94-9684-2590186075d1" />
 
 This video demonstrates
 - basic (vim-like) navigation and reading
 - *zen* mode: just show content
+- opening an image link using `feh`
 - creating new tags and tagging an article
 - *filtering* and *searching* article list by using article queries
 - *tagging* multiple articles by using an article query
