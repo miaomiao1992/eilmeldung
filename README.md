@@ -157,8 +157,11 @@ Of course, there are many awesome alternatives to *eilmeldung*. Check them out!
 - [tuifeed](https://github.com/veeso/tuifeed), a terminal news feed reader with a fancy ui 
 
 ---
-<details><summary>FAQ</summary>
-# FAQ
+
+## FAQ
+
+<details><summary>Expand to see the most frequently asked questions</summary>
+
 
 ### Which providers are supported?
 
@@ -208,8 +211,10 @@ Yes, there is rudimentary mouse support with the option `mouse_support = true` (
 
 ---
 
-**More questions?** See the complete [FAQ](docs/faq.md).
 </details>
+
+**More questions?** See the complete [FAQ](docs/faq.md).
+
 ---
 
 # Credits
