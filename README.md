@@ -157,7 +157,7 @@ Of course, there are many awesome alternatives to *eilmeldung*. Check them out!
 - [tuifeed](https://github.com/veeso/tuifeed), a terminal news feed reader with a fancy ui 
 
 ---
-
+<details><summary>FAQ</summary>
 # FAQ
 
 ### Which providers are supported?
@@ -188,6 +188,9 @@ Create a tag (`:tagadd readlater red`), bind it to a key, and create a query in 
 
 Yes, focus the feed list and press `2` / `3` to show only feeds/categories/tags with unread / marked articles, show all with `1`. Change the value of the configuration option `feed_list_scope` to either `all`, `unread` or `marked` to set the default value.
 
+### When I mark an article as read, it disappears!?
+
+By default, the article list shows only unread items. When you mark the article as read, it is automatically hidden. You can show `all` articles by focusing the article list and pressing `1`. If you want this to be the default, set `article_scope = "all"`. The same setting exists for the feed list (see previous item).
 
 ### Can I execute automatic operations after synchronisation/refresh?
 
@@ -206,7 +209,7 @@ Yes, there is rudimentary mouse support with the option `mouse_support = true` (
 ---
 
 **More questions?** See the complete [FAQ](docs/faq.md).
-
+</details>
 ---
 
 # Credits
