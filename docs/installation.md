@@ -14,6 +14,8 @@ Follow any of the installation methods below, then run *eilmeldung*. It will gui
 - [Nix Flake and Home Manager](#nix-flake-and-home-manager)
 - [Void Linux](#void-linux)
 - [Windows via Scoop](#windows-via-scoop)
+- [Windows — Install latest from GitHub](#windows--install-latest-from-github)
+- [Windows — Build from source](#windows--build-from-source)
 - [NetBSD](#netbsd)
 
 ---
@@ -169,6 +171,53 @@ Install [scoop](https://scoop.sh/) and then
 ```
 
 Recommended terminal is [Windows Terminal](https://github.com/microsoft/terminal) with a NerdFont-patched font.
+
+---
+
+## Windows — Install latest from GitHub
+
+For power users who want the latest unreleased code from `main` without cloning the repo. Download and run `install-windows.ps1` directly:
+
+```pwsh
+irm https://raw.githubusercontent.com/christo-auer/eilmeldung/main/scripts/install-windows.ps1 -OutFile install-eilmeldung.ps1
+.\install-eilmeldung.ps1
+```
+
+This script is fully self-contained — it automatically installs all required dependencies (Perl, LLVM, vcpkg, libxml2) and runs `cargo install` from GitHub.
+
+> **Note:** The first run downloads and compiles dependencies from source — expect 20–30 minutes. Subsequent runs are much faster.
+
+---
+
+## Windows — Build from source
+
+For contributors who want to build local changes. Requires cloning the repo first.
+
+**Step 1 — Install the Rust toolchain**
+
+```pwsh
+winget install Rustlang.Rustup
+rustup default stable
+rustup target add x86_64-pc-windows-msvc
+```
+
+**Step 2 — Build**
+
+The helper script automatically installs all remaining dependencies (Perl, LLVM, vcpkg, libxml2):
+
+```pwsh
+.\scripts\build-windows.ps1
+```
+
+Override any paths if needed:
+
+```pwsh
+.\scripts\build-windows.ps1 -VcpkgRoot "D:\my-vcpkg" -PerlPath "C:\Strawberry\perl\bin\perl.exe" -LlvmBinPath "C:\Program Files\LLVM\bin"
+```
+
+The binary will be at `target\x86_64-pc-windows-msvc\release\eilmeldung.exe`.
+
+> **Note:** The first build downloads and compiles dependencies from source — expect 20–30 minutes. Subsequent builds are much faster.
 
 ---
 
