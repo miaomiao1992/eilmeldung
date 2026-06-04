@@ -1,5 +1,7 @@
 # Unreleased
 
+# 1.5.4 - 2026-06-04
+
 - bugfix: crash when width/height of focused panel was set to `100%` (see `article_list_focused_height`, etc.)
 
 # 1.5.3 - 2026-05-19
