@@ -50,9 +50,9 @@ New-Item "$env:USERPROFILE\.config\eilmeldung\get-pass.ps1" -Force
 Add content to each:
 
 ```powershell
-Add-Content "$env:USERPROFILE\.config\eilmeldung\get-url.ps1" 'gpg --quiet --decrypt "$env:USERPROFILE\.passwords\eilmeldung-url.gpg"'
-Add-Content "$env:USERPROFILE\.config\eilmeldung\get-user.ps1" 'gpg --quiet --decrypt "$env:USERPROFILE\.passwords\eilmeldung-user.gpg"'
-Add-Content "$env:USERPROFILE\.config\eilmeldung\get-pass.ps1" 'gpg --quiet --decrypt "$env:USERPROFILE\.passwords\eilmeldung-pass.gpg"'
+Add-Content "$env:USERPROFILE\.config\eilmeldung\get-url.ps1" '(gpg --quiet --decrypt "$env:USERPROFILE\.passwords\eilmeldung-url.gpg").Trim()'
+Add-Content "$env:USERPROFILE\.config\eilmeldung\get-user.ps1" '(gpg --quiet --decrypt "$env:USERPROFILE\.passwords\eilmeldung-user.gpg").Trim()'
+Add-Content "$env:USERPROFILE\.config\eilmeldung\get-pass.ps1" '(gpg --quiet --decrypt "$env:USERPROFILE\.passwords\eilmeldung-pass.gpg").Trim()'
 ```
 
 ## eilmeldung Config for FreshRSS
