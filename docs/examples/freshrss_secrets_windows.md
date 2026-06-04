@@ -95,3 +95,5 @@ url      = "cmd:pwsh -NoProfile -File ${USERPROFILE}/.config/eilmeldung/get-url.
 user     = "cmd:pwsh -NoProfile -File ${USERPROFILE}/.config/eilmeldung/get-user.ps1"
 password = "cmd:pwsh -NoProfile -File ${USERPROFILE}/.config/eilmeldung/get-pass.ps1"
 ```
+
+**Note**: If `pwsh` is not available, you may need to use `powershell` instead.
